@@ -143,3 +143,14 @@
         width: 30px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .hamburger {
+        padding-right: 15px;
+        padding-top: 30px;
+    }
+    .mobile-logo {
+        padding-left: 15px;
+        height: 80px;
+    }
+}

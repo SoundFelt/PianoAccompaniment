@@ -5,6 +5,8 @@ import BiographyTopMobileImage from './images/HeroImage.jpg'
 import BiographyBottom from './images/BiographyBottom.png'
 import RightArrow from './images/RightArrow.png'
 
+import { Link } from 'react-scroll'
+
 const Biography = () => {
   return (
     <div id="biography" className="biography-background">
@@ -38,7 +40,11 @@ const Biography = () => {
             <div className="biography-bottom-container">
                 <div className="biography-bottom-left">
                     <p className="biography-bottom-content">Ruifan received an offer in 2019 from the Royal College of Music in London to study for her Masters Degree under the British concert pianist Professor Gordon Fergus Thompson. After successfully graduating two years later she continued on at the conservatoire, achieving the highly respected level 8 Artist Diploma qualification in 2021. <br/><br/><span className="bio-content-bottom-desktop">As a professional collaborative pianist, Ruifan is trustworthy and reliable, with the aim of making every rehearsal as effective and productive that it possibly can be, bringing out the best qualities of musicianship. With a wide range of repertoire accumulated over two decades of playing from all different styles and eras, she understands that every performance is a chance to learn something new and develop as a musician. Her goal is to contribute to the success of the musicians that she works with and be inspirational on this music journey together.</span> </p>
-                    <button className="testimonials-button desktop-button">Read testimonials<img className="right-arrow" src={RightArrow} alt="arrow"/></button>
+                    <Link to="testimonials" smooth={true} duration={1000}>
+                        <button className="testimonials-button desktop-button">Read testimonials
+                        <img className="right-arrow" src={RightArrow} alt="arrow"/>
+                        </button>
+                    </Link>
                 </div>
                 <div className="biography-bottom-right">
                     <img className="biography-bottom-image" src={BiographyBottom} alt="piano-on-stage"/>
@@ -46,7 +52,11 @@ const Biography = () => {
             </div>
 
             <p className="mobile-bio-content-bottom">As a professional collaborative pianist, Ruifan is trustworthy and reliable, with the aim of making every rehearsal as effective and productive that it possibly can be, bringing out the best qualities of musicianship. With a wide range of repertoire accumulated over two decades of playing from all different styles and eras, she understands that every performance is a chance to learn something new and develop as a musician. Her goal is to contribute to the success of the musicians that she works with and be inspirational on this music journey together.</p>
-            <button className="testimonials-button mobile-button">Read testimonials<img className="right-arrow" src={RightArrow} alt="arrow"/></button>
+            <Link to="testimonials" smooth={true} duration={1000}>
+                <button className="testimonials-button mobile-button">Read testimonials
+                <img className="right-arrow" src={RightArrow} alt="arrow"/>
+                </button>
+            </Link>
         </div>
     </div>
   )
