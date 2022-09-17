@@ -1,0 +1,296 @@
+.biography-background {
+    background-color: #F4F4F4;
+}
+
+.biography-container {
+    padding: 50px 50px;
+    max-width: 1400px;
+    font-family: 'Jost', sans-serif;
+    margin: auto;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/src/images/QuotemarkRight.png');
+    background-position: right;
+    background-size: 6rem;
+    background-repeat: no-repeat;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+    padding-right: 50px;
+}
+
+.quote-author {
+    color: #CEA350;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.quote-right {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.biography-top-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.biography-top-image {
+    width: 400px;
+}
+
+.biography-top-right {
+    font-family: 'Source Serif 4', sans-serif;
+    padding-left: 100px;
+    width: 100%;
+}
+
+.biography-word {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+    color: #CEA350;
+}
+
+.biography-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.biography-top-content {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    max-width: 800px;
+    line-height: 26px;
+    color: rgb(70, 70, 70);
+}
+
+.biography-bottom-container {
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.biography-bottom-left {
+    padding-right: 75px;
+}
+
+.biography-bottom-content {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    max-width: 800px;
+    line-height: 26px;
+    color: rgb(70, 70, 70);
+}
+
+.biography-bottom-image {
+    width: 450px;
+}
+
+.testimonials-button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 15px;
+    padding: 12px 15px;
+    font-weight: 600;
+    margin-top: 70px;
+    transition: all 0.2s ease-in-out;
+    color: rgb(70, 70, 70);
+}
+
+.testimonials-button:hover {
+    box-shadow: 0px 5px 10px -5px rgb(35, 35, 35);
+    cursor: pointer;
+}
+
+.right-arrow {
+    width: 20px;
+    margin-left: 5px;
+}
+
+/* Reponsiveness */
+
+@media screen and (max-width: 1200px) {
+    .quote-text {
+        padding-right: 120px;
+        font-size: 1.85rem;
+    }
+    .quote-author {
+        font-size: 1.5rem;
+    }
+    .biography-top-container {
+        margin-top: 50px;
+    }
+    .biography-top-right {
+        padding-left: 50px;
+    }
+    .biography-bottom-container {
+        align-items: flex-start;
+    }
+    .biography-bottom-left {
+        padding-right: 40px;
+    }
+    .biography-bottom-image {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .mobile-bio-content-top {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .biography-container {
+        padding: 50px 25px;
+    }
+    .bio-content-top-desktop {
+        display: none;
+    }
+    .biography-top-container {
+        margin-bottom: 50px;
+    }
+    .mobile-bio-content-top {
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgb(70, 70, 70);
+        margin: 0;
+    }
+    .biography-word {
+        font-size: 1.2rem;
+    }
+    .biography-top-image {
+        width: 350px;
+    }
+    .biography-bottom-container {
+        align-items: center;
+    }
+    .biography-bottom-image {
+        width: 300px;
+        margin-bottom: 75px;
+
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .mobile-bio-content-bottom {
+        display: none;
+    }
+    .mobile-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .bio-content-bottom-desktop {
+        display: none;
+    }
+    .desktop-button{
+        display: none;
+     }
+    .mobile-bio-content-bottom {
+        font-family: 'Jost', sans-serif;
+        font-weight: 400;
+        max-width: 800px;
+        line-height: 26px;
+        color: rgb(70, 70, 70);
+        margin: auto;
+    }
+    .biography-top-container {
+        margin-bottom: 30px;
+    }
+    .biography-bottom-container {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .biography-bottom-image {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .biography-top-image-mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .biography-top-container {
+        flex-direction: column;
+    }
+    .biography-top-image {
+        display: none;
+    }
+    .biography-top-image-mobile {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .biography-word {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .biography-title {
+        text-align: center;
+        margin: 30px auto;
+    }
+    .biography-top-right {
+        padding: 0;
+    }
+    .biography-top-content {
+        margin: 0;
+    }
+    .biography-bottom-container {
+        flex-direction: column-reverse;
+    }
+    .biography-bottom-left {
+        padding: 0;
+    }
+    .biography-bottom-image {
+        width: 450px;
+        margin: 30px 0;
+    }
+    .biography-bottom-content {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .quote-container {
+        background-size: 4.5rem;
+    }
+    .quote-text {
+        font-size: 1.5rem;
+        padding-right: 80px;
+    }
+    .quote-author {
+        font-size: 1.2rem;
+    }
+    .biography-title {
+        font-size: 1.9rem;
+    }
+    .biography-container {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .biography-bottom-image {
+        width: 330px;
+    }
+}

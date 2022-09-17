@@ -1,0 +1,43 @@
+.App {
+  height: 100%;
+  font-family: 'Source Serif 4', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.divider-image-container {
+  height: 590px;
+  overflow: hidden;
+  position: relative;
+}
+
+.divider-image {
+  width: 100vw;
+  position: absolute;
+  bottom: -70px;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1000px) {
+  .divider-image-container {
+    height: 450px;
+  }
+  .divider-image {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .divider-image-container {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .divider-image-container {
+    height: 240px;
+  }
+}

@@ -1,0 +1,231 @@
+.footer-background {
+    background-color: #B0ABA2
+}
+
+.footer-container-desktop {
+    padding: 15px 200px;
+    display: flex;
+}
+
+.footer-container-mobile {
+    display: none;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-left p {
+    color: #595959;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-center {
+    width: 33%;
+    
+}
+
+.contact-footer-word {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.facebook-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 24px;
+}
+
+.facebook-contact a {
+    color: #595959;
+    margin: 0;
+    margin-left: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.facebook-contact a:hover {
+    cursor: pointer;
+    color: rgb(223, 223, 223);
+}
+
+.email-contact {
+    display: flex;
+    align-items: center;
+}
+
+.email-contact a {
+    color: #595959;
+    margin: 0;
+    margin-left: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.email-contact a:hover {
+    cursor: pointer;
+    color: rgb(223, 223, 223);
+}
+
+.footer-right {
+    width: 33%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+}
+
+.site-navigation-word {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.site-links-footer {
+    display: flex;
+}
+
+.site-links-footer a {
+    font-size: 1.1rem;
+    color: black;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.site-links-footer a:hover {
+    color: rgb(223, 223, 223);
+    cursor: pointer;
+}
+
+.footer-sub-text, .footer-made-with {
+    font-size: 0.9rem;
+    color: #595959;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1400px) {
+    .footer-container-desktop {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .footer-container-desktop {
+        padding-right: 50px;
+    }
+    .contact-footer-word {
+        margin-bottom: 30px;
+    }
+    .site-links-footer {
+        flex-direction: column;
+    }
+    .links-set-2 {
+        padding-bottom: 10px;
+        margin-top: 15px;
+    }
+    .footer-made-with {
+        display: none;
+    }
+    .site-navigation-word {
+        margin-bottom: 0;
+    }
+    .email-contact {
+        padding-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer-container-desktop {
+        display: none;
+    }
+    .footer-container-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-top {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-top-left {
+        margin-top: 10px;
+    }
+    .footer-top-left p {
+        color: #595959;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    .facebook-contact {
+        margin: 0;
+    }
+    .footer-top-right {
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-footer-word {
+        margin: 20px 0;
+    }
+    .email-contact {
+        margin-top: 15px;
+    }
+    .footer-bottom {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-left: 10px;
+    }
+    .site-links-footer {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .site-links-footer a {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-top-left {
+        text-align: center;
+    }
+    .footer-top-right {
+        margin: 0;
+        align-items: center;
+    }
+    .footer-logo {
+        width: 300px;
+    }
+    .contact-footer-word {
+        display: none;
+    }
+    .facebook-contact {
+        margin-top: 20px;
+    }
+    .site-links-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-links-footer a {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 1.2rem;;
+    }
+}
