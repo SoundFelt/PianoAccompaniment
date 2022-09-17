@@ -11,7 +11,7 @@ const Pricing = () => {
     <div id="pricing" className="pricing-background">
         <div className="pricing-container">
             <div className="pricing-titles-container">
-                <p className="pricing-bookings-word">Pricing</p>
+                <p className="pricing-bookings-word">Bookings</p>
                 <p className="pricing-title">Accompaniment & Event Pricing</p>
                 <p className="pricing-sub-title-content">Rates are set based on the amount of time left until your event. You are guaranteed to receive the same high quality musicianship and professionalism from me whether we have months, weeks or just days. </p>
             </div>
