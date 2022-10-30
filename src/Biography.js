@@ -18,7 +18,7 @@ const Biography = () => {
                         <p className="quote-text">Music is the heart of life. She speaks love; without it, there is no possible good and with it everything is beautiful.</p>
                     </div>
                     <div className="quote-left-bottom">
-                        <p className="quote-author">- Franz List</p>
+                        <p className="quote-author">- Franz Liszt</p>
                     </div>
                 </div>
             </div>
